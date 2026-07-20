@@ -30,26 +30,7 @@ import {
   Upload,
   Printer
 } from 'lucide-react';
-// File: app/page.tsx
-import { neon } from '@neondatabase/serverless';
 
-export default function Page() {
-  async function create(formData: FormData) {
-    'use server';
-    // Connect to the Neon database
-    const sql = neon(`${process.env.DATABASE_URL}`);
-    const comment = formData.get('comment');
-    // Insert the comment from the form into the Postgres database
-    await sql('INSERT INTO comments (comment) VALUES ($1)', [comment]);
-  }
-
-  return (
-    <form action={create}>
-      <input type="text" placeholder="write a comment" name="comment" />
-      <button type="submit">Submit</button>
-    </form>
-  );
-}
 // === DỮ LIỆU CHƯƠNG TRÌNH ĐÀO TẠO CỦA CÁC NGÀNH ===
 const INITIAL_SUBJECTS = [
   // === NGÀNH: CÔNG NGHỆ THÔNG TIN (image_304889.png) ===
@@ -422,7 +403,28 @@ const USERS_ACCOUNTS = [
   { username: 'admin', password: '123', name: 'Superadmin-HIC (Admin)', role: 'admin', email: 'admin@tms-edu.vn' },
   { username: 'cbdt', password: '123', name: 'Nguyễn Yến Đường (Cán bộ)', role: 'staff', email: 'minh.nt@tms-edu.vn' },
 ];
+    <!-- Nhúng Firebase 11.6.1 SDK trực tiếp -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, getDoc, setDoc, updateDoc, deleteDoc, onSnapshot, collection, query, getDocs } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
+        // Lấy cấu hình Firebase và App ID tự động từ hệ thống
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'shared-library-id-2026';
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {
+            apiKey: "AIzaSyAWXxyVfseHCDUWOUcZjE2mDFEwOOR5xdc",
+            authDomain: "hic-lms-portal.firebaseapp.com",
+            projectId: "hic-lms-portal",
+            storageBucket: "hic-lms-portal.firebasestorage.app",
+            messagingSenderId: "496254550829",
+            appId: "1:496254550829:web:e971d89d78025e197089a4",
+            measurementId: "G-S92GK56QK3"
+        };
+
+        // Khởi tạo các dịch vụ Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const auth = getAuth(app);
 export default function App() {
   // --- STATE QUẢN LÝ CHÍNH ---
   const [currentUser, setCurrentUser] = useState(USERS_ACCOUNTS[0]);
