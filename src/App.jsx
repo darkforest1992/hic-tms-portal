@@ -372,66 +372,36 @@ const INITIAL_COURSES = [
 
 // === DANH SÁCH LỚP HỌC HÀNH CHÍNH ===
 const INITIAL_CLASSES = [
-  { id: 'LH001', name: 'Kỹ thuật chế biến món ăn K15', courseId: 'KH004', major: 'Kỹ thuật chế biến món ăn', teacherId: 'GV004', startDate: '2026-02-15', endDate: '2026-06-30', location: 'Cơ sở chính - HIC', quota: 40, term: 'Học kỳ I' },
-  { id: 'LH002', name: 'Lập trình ứng dụng CNTT-K15', courseId: 'KH001', major: 'Công nghệ thông tin', teacherId: 'GV001', startDate: '2026-02-20', endDate: '2026-06-25', location: 'Tòa nhà Công nghệ cao - HIC', quota: 45, term: 'Học kỳ I' },
-  { id: 'LH003', name: 'Ngôn ngữ Nhật thương mại K15', courseId: 'KH006', major: 'Tiếng Nhật', teacherId: 'GV002', startDate: '2026-03-01', endDate: '2026-07-15', location: 'Trung tâm Ngoại ngữ - HIC', quota: 30, term: 'Học kỳ I' }
-];
+ ];
 
 // === DANH SÁCH ĐĂNG KÝ HỌC ===
 const INITIAL_ENROLLMENTS = [
-  { studentId: 'HV001', classId: 'LH002' },
-  { studentId: 'HV002', classId: 'LH001' },
-  { studentId: 'HV003', classId: 'LH003' },
-  { studentId: 'HV004', classId: 'LH002' }
 ];
 
 // === DANH SÁCH ĐIỂM SỐ BAN ĐẦU (Theo mô hình điểm tổng kết hệ 10) ===
 const INITIAL_GRADES = [
-  { studentId: 'HV001', subjectId: 'MH20', score: 8.5 }, // Thiết kế trang Web (CNTT)
-  { studentId: 'HV001', subjectId: 'MH17', score: 9.0 }, // Cấu trúc và bảo trì máy tính (CNTT)
-  { studentId: 'HV004', subjectId: 'MH20', score: 5.6 },
-  { studentId: 'HV002', subjectId: 'MH10', score: 7.2 }
 ];
 
 // === DANH SÁCH LỊCH HỌC BAN ĐẦU ===
 const INITIAL_SCHEDULES = [
-  { id: 'S001', classId: 'LH002', sessionNum: 1, date: '2026-03-05', topic: 'Giới thiệu về ReactJS & JSX' },
-  { id: 'S002', classId: 'LH002', sessionNum: 2, date: '2026-03-12', topic: 'State, Props và Quản lý vòng đời Component' },
-  { id: 'S003', classId: 'LH003', sessionNum: 1, date: '2026-03-06', topic: 'Khái quát hệ chữ Kana và Từ vựng Chào hỏi' }
 ];
 
 // === DANH SÁCH ĐIỂM DANH BAN ĐẦU ===
 const INITIAL_ATTENDANCE = {
-  'S001': { 'HV001': 'P', 'HV004': 'E' },
-  'S002': { 'HV001': 'P', 'HV004': 'P' }
 };
 
 // === DỮ LIỆU HỌC VIÊN BAN ĐẦU ===
 const INITIAL_STUDENTS = [
-  { id: 'HV001', name: 'Nguyễn Văn Anh', dob: '15/05/2002', gender: 'Nam', cccd: '012345678912', phone: '0912345678', email: 'vananh.nguyen@gmail.com', status: 'Đang học', class: 'CNTT-K15', major: 'Công nghệ thông tin' },
-  { id: 'HV002', name: 'Trần Thị Bình', dob: '20/09/2001', gender: 'Nữ', cccd: '012345678913', phone: '0987654321', email: 'thibinh.tran@gmail.com', status: 'Đang học', class: 'CBMA-K15', major: 'Kỹ thuật chế biến món ăn' },
-  { id: 'HV003', name: 'Phạm Hồng Cường', dob: '02/11/2003', gender: 'Nam', cccd: '012345678914', phone: '0905123456', email: 'hongcuong.pham@gmail.com', status: 'Bảo lưu', class: 'TN-K15', major: 'Tiếng Nhật' },
-  { id: 'HV004', name: 'Lê Thùy Dương', dob: '30/01/2002', gender: 'Nữ', cccd: '012345678915', phone: '0934567890', email: 'thuyduong.le@gmail.com', status: 'Đang học', class: 'CNTT-K15', major: 'Công nghệ thông tin' },
-  { id: 'HV005', name: 'Hoàng Minh Đức', dob: '12/07/2000', gender: 'Nam', cccd: '012345678916', phone: '', email: '', status: 'Buộc thôi học', class: 'TN-K14', major: 'Tiếng Nhật' }
 ];
 
 // === DỮ LIỆU GIÁO VIÊN BAN ĐẦU ===
 const INITIAL_TEACHERS = [
-  { id: 'GV001', name: 'PGS. TS. Nguyễn Tiến Dũng', specialty: 'Trí tuệ nhân tạo & Học máy', department: 'Khoa Kỹ thuật - Công nghệ', phone: '0911223344', email: 'dung.nt@tms-edu.vn', degree: 'Phó Giáo sư, Tiến sĩ' },
-  { id: 'GV002', name: 'TS. Lê Thị Hoài', specialty: 'Ngôn ngữ học ứng dụng & Ngữ pháp tiếng Nhật', department: 'Khoa Ngôn ngữ', phone: '0922334455', email: 'hoai.lt@tms-edu.vn', degree: 'Tiến sĩ' },
-  { id: 'GV003', name: 'ThS. Trần Minh Hoàng', specialty: 'Lập trình Web & Di động', department: 'Khoa Kỹ thuật - Công nghệ', phone: '0933445566', email: 'hoang.tm@tms-edu.vn', degree: 'Thạc sĩ' },
-  { id: 'GV004', name: 'TS. Vũ Hoàng Long', specialty: 'Chế biến món Á - Âu chuyên sâu', department: 'Khoa Dịch vụ  - Du lịch - Nhà hàng khách sạn', phone: '0944556677', email: 'long.vh@tms-edu.vn', degree: 'Tiến sĩ' }
 ];
 
 // === DANH SÁCH TÀI KHOẢN MẪU BAN ĐẦU ===
 const USERS_ACCOUNTS = [
   { username: 'admin', password: '123', name: 'Superadmin-HIC (Admin)', role: 'admin', email: 'admin@tms-edu.vn' },
   { username: 'cbdt', password: '123', name: 'Nguyễn Yến Đường (Cán bộ)', role: 'staff', email: 'minh.nt@tms-edu.vn' },
-  { username: 'GV001', password: '123', name: 'PGS. TS. Nguyễn Tiến Dũng', role: 'teacher', email: 'dung.nt@tms-edu.vn', teacherId: 'GV001' },
-  { username: 'HV001', password: '123', name: 'Nguyễn Văn Anh', role: 'student', email: 'vananh.nguyen@gmail.com', studentId: 'HV001' },
-  { username: 'HV002', password: '123', name: 'Trần Thị Bình', role: 'student', email: 'thibinh.tran@gmail.com', studentId: 'HV002' },
-  { username: 'HV003', password: '123', name: 'Phạm Hồng Cường', role: 'student', email: 'hongcuong.pham@gmail.com', studentId: 'HV003' },
-  { username: 'HV004', password: '123', name: 'Lê Thùy Dương', role: 'student', email: 'thuyduong.le@gmail.com', studentId: 'HV004' }
 ];
 
 export default function App() {
