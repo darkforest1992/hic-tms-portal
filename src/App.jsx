@@ -33,7 +33,7 @@ import {
 
 // === DỮ LIỆU CHƯƠNG TRÌNH ĐÀO TẠO CỦA CÁC NGÀNH ===
 const INITIAL_SUBJECTS = [
-  // === NGÀNH: CÔNG NGHỆ THÔNG TIN ===
+  // === NGÀNH: CÔNG NGHỆ THÔNG TIN (image_304889.png) ===
   { id: 'MH01', name: 'Tiếng Anh', credits: 3, hours: 90, major: 'Công nghệ thông tin', type: 'Các môn học chung' },
   { id: 'MH02', name: 'Tin học', credits: 2, hours: 45, major: 'Công nghệ thông tin', type: 'Các môn học chung' },
   { id: 'MH03', name: 'Giáo dục chính trị', credits: 2, hours: 30, major: 'Công nghệ thông tin', type: 'Các môn học chung' },
@@ -61,7 +61,7 @@ const INITIAL_SUBJECTS = [
   { id: 'MH25', name: 'Kỹ năng giao tiếp', credits: 2, hours: 30, major: 'Công nghệ thông tin', type: 'Môn học, mô đun tự chọn' },
   { id: 'MH26', name: 'Khởi tạo doanh nghiệp', credits: 2, hours: 30, major: 'Công nghệ thông tin', type: 'Môn học, mô đun tự chọn' },
 
-  // === NGÀNH: TẠO MẪU VÀ CHĂM SÓC SẮC ĐẸP ===
+  // === NGÀNH: TẠO MẪU VÀ CHĂM SÓC SẮC ĐẸP (image_033380.png) ===
   { id: 'MH01', name: 'Tiếng Anh', credits: 3, hours: 90, major: 'Tạo mẫu và chăm sóc sắc đẹp', type: 'Các môn học chung' },
   { id: 'MH02', name: 'Tin học', credits: 2, hours: 45, major: 'Tạo mẫu và chăm sóc sắc đẹp', type: 'Các môn học chung' },
   { id: 'MH03', name: 'Giáo dục chính trị', credits: 2, hours: 30, major: 'Tạo mẫu và chăm sóc sắc đẹp', type: 'Các môn học chung' },
@@ -80,14 +80,14 @@ const INITIAL_SUBJECTS = [
   { id: 'MĐ16', name: 'Trang điểm nghệ thuật', credits: 3, hours: 90, major: 'Tạo mẫu và chăm sóc sắc đẹp', type: 'Môn học, mô đun chuyên môn' },
   { id: 'MH17', name: 'Tạo mẫu và Chăm sóc tóc', credits: 2, hours: 60, major: 'Tạo mẫu và chăm sóc sắc đẹp', type: 'Môn học, mô đun chuyên môn' },
   { id: 'MĐ18', name: 'Massage dưỡng sinh', credits: 2, hours: 60, major: 'Tạo mẫu và chăm sóc sắc đẹp', type: 'Môn học, mô đun chuyên môn' },
-  { id: 'MH19', name: 'Nối mi nghệ thuật', credits: 2.5, hours: 75, major: 'Tạo mẫu và chăm sóc sắc đẹp', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH19', name: 'Nối mi nghệ thuật (tăng 15t)', credits: 2.5, hours: 75, major: 'Tạo mẫu và chăm sóc sắc đẹp', type: 'Môn học, mô đun chuyên môn' },
   { id: 'MH20', name: 'Quản lý cơ sở làm đẹp', credits: 3, hours: 45, major: 'Tạo mẫu và chăm sóc sắc đẹp', type: 'Môn học, mô đun chuyên môn' },
   { id: 'MH21', name: 'Thực hành nghề nghiệp 1', credits: 4, hours: 120, major: 'Tạo mẫu và chăm sóc sắc đẹp', type: 'Môn học, mô đun chuyên môn' },
   { id: 'MĐ22', name: 'Thực hành nghề nghiệp 2', credits: 4, hours: 180, major: 'Tạo mẫu và chăm sóc sắc đẹp', type: 'Môn học, mô đun chuyên môn' },
   { id: 'MH23', name: 'Khởi tạo doanh nghiệp', credits: 3, hours: 45, major: 'Tạo mẫu và chăm sóc sắc đẹp', type: 'Môn học, mô đun tự chọn' },
   { id: 'MH24', name: 'Kỹ năng làm việc nhóm', credits: 3, hours: 45, major: 'Tạo mẫu và chăm sóc sắc đẹp', type: 'Môn học, mô đun tự chọn' },
 
-  // === NGÀNH: KỸ THUẬT PHA CHẾ VÀ PHỤC VỤ ĐỒ UỐNG ===
+  // === NGÀNH: KỸ THUẬT PHA CHẾ VÀ PHỤC VỤ ĐỒ UỐNG (image_0333b9.png) ===
   { id: 'MH01', name: 'Tiếng Anh', credits: 3, hours: 90, major: 'Kỹ thuật pha chế và phục vụ đồ uống', type: 'Các môn học chung' },
   { id: 'MH02', name: 'Tin học', credits: 2, hours: 45, major: 'Kỹ thuật pha chế và phục vụ đồ uống', type: 'Các môn học chung' },
   { id: 'MH03', name: 'Giáo dục chính trị', credits: 2, hours: 30, major: 'Kỹ thuật pha chế và phục vụ đồ uống', type: 'Các môn học chung' },
@@ -114,7 +114,7 @@ const INITIAL_SUBJECTS = [
   { id: 'MH24', name: 'Hoạch toán định mức', credits: 2, hours: 30, major: 'Kỹ thuật pha chế và phục vụ đồ uống', type: 'Môn học, mô đun tự chọn' },
   { id: 'MH25', name: 'Kỹ năng giao tiếp', credits: 2, hours: 30, major: 'Kỹ thuật pha chế và phục vụ đồ uống', type: 'Môn học, mô đun tự chọn' },
 
-  // === NGÀNH: KỸ THUẬT CHẾ BIẾN MÓN ĂN ===
+  // === NGÀNH: KỸ THUẬT CHẾ BIẾN MÓN ĂN (image_952fc6.png) ===
   { id: 'MH01', name: 'Tiếng Anh', credits: 3, hours: 90, major: 'Kỹ thuật chế biến món ăn', type: 'Các môn học chung' },
   { id: 'MH02', name: 'Tin học', credits: 2, hours: 45, major: 'Kỹ thuật chế biến món ăn', type: 'Các môn học chung' },
   { id: 'MH03', name: 'Giáo dục chính trị', credits: 2, hours: 30, major: 'Kỹ thuật chế biến món ăn', type: 'Các môn học chung' },
@@ -140,7 +140,7 @@ const INITIAL_SUBJECTS = [
   { id: 'MH23', name: 'Hạch toán định mức', credits: 2, hours: 30, major: 'Kỹ thuật chế biến món ăn', type: 'Môn học, mô đun tự chọn' },
   { id: 'MH24', name: 'Khởi tạo doanh nghiệp', credits: 2, hours: 30, major: 'Kỹ thuật chế biến món ăn', type: 'Môn học, mô đun tự chọn' },
 
-  // === NGÀNH: HƯỚNG DẪN DU LỊCH ===
+  // === NGÀNH: HƯỚNG DẪN DU LỊCH (image_952f05.png) ===
   { id: 'MH01', name: 'Tiếng Anh', credits: 3, hours: 90, major: 'Hướng dẫn du lịch', type: 'Các môn học chung' },
   { id: 'MH02', name: 'Tin học', credits: 2, hours: 45, major: 'Hướng dẫn du lịch', type: 'Các môn học chung' },
   { id: 'MH03', name: 'Giáo dục chính trị', credits: 2, hours: 30, major: 'Hướng dẫn du lịch', type: 'Các môn học chung' },
@@ -149,11 +149,11 @@ const INITIAL_SUBJECTS = [
   { id: 'MH06', name: 'Giáo dục Thể chất', credits: 1, hours: 30, major: 'Hướng dẫn du lịch', type: 'Các môn học chung' },
   { id: 'MH07', name: 'Lịch sử Việt Nam', credits: 3, hours: 45, major: 'Hướng dẫn du lịch', type: 'Môn học, mô đun cơ sở' },
   { id: 'MH08', name: 'Địa lý du lịch Việt Nam', credits: 3, hours: 45, major: 'Hướng dẫn du lịch', type: 'Môn học, mô đun cơ sở' },
-  { id: 'MH09', name: 'Hệ thống di tích lịch sử, văn hóa', credits: 1.5, hours: 45, major: 'Hướng dẫn du lịch', type: 'Môn học, mô đun cơ sở' },
+  { id: 'MH09', name: 'Hệ thống di tích lịch sử, văn hóa và danh lam thắng cảnh ở Việt Nam', credits: 1.5, hours: 45, major: 'Hướng dẫn du lịch', type: 'Môn học, mô đun cơ sở' },
   { id: 'MH10', name: 'Cơ sở văn hóa Việt Nam', credits: 2, hours: 30, major: 'Hướng dẫn du lịch', type: 'Môn học, mô đun cơ sở' },
   { id: 'MH11', name: 'Văn hóa ẩm thực', credits: 3, hours: 45, major: 'Hướng dẫn du lịch', type: 'Môn học, mô đun cơ sở' },
   { id: 'MH12', name: 'Tổng quan du lịch và khách sạn', credits: 4, hours: 60, major: 'Hướng dẫn du lịch', type: 'Môn học, mô đun chuyên môn' },
-  { id: 'MH13', name: 'Tâm lý và kỹ năng giao tiếp', credits: 2, hours: 60, major: 'Hướng dẫn du lịch', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH13', name: 'Tâm lý và kỹ năng giao tiếp ứng xử với khách du lịch', credits: 2, hours: 60, major: 'Hướng dẫn du lịch', type: 'Môn học, mô đun chuyên môn' },
   { id: 'MH14', name: 'Nghiệp vụ nhà hàng', credits: 1.5, hours: 45, major: 'Hướng dẫn du lịch', type: 'Môn học, mô đun chuyên môn' },
   { id: 'MĐ15', name: 'Lễ tân du lịch', credits: 2, hours: 60, major: 'Hướng dẫn du lịch', type: 'Môn học, mô đun chuyên môn' },
   { id: 'MH16', name: 'Pháp luật du lịch', credits: 4, hours: 60, major: 'Hướng dẫn du lịch', type: 'Môn học, mô đun chuyên môn' },
@@ -168,7 +168,88 @@ const INITIAL_SUBJECTS = [
   { id: 'MH25', name: 'Tổ chức sự kiện', credits: 3, hours: 45, major: 'Hướng dẫn du lịch', type: 'Môn học, mô đun tự chọn' },
   { id: 'MH26', name: 'Khởi tạo doanh nghiệp', credits: 3, hours: 45, major: 'Hướng dẫn du lịch', type: 'Môn học, mô đun tự chọn' },
 
-  // === NGÀNH: TIẾNG NHẬT ===
+  // === NGÀNH: KỸ THUẬT LÀM BÁNH (image_a01092.png) ===
+  { id: 'MH01', name: 'Tiếng Anh', credits: 3, hours: 90, major: 'Kỹ thuật làm bánh', type: 'Các môn học chung' },
+  { id: 'MH02', name: 'Tin học', credits: 2, hours: 45, major: 'Kỹ thuật làm bánh', type: 'Các môn học chung' },
+  { id: 'MH03', name: 'Giáo dục chính trị', credits: 2, hours: 30, major: 'Kỹ thuật làm bánh', type: 'Các môn học chung' },
+  { id: 'MH04', name: 'Pháp luật', credits: 1, hours: 15, major: 'Kỹ thuật làm bánh', type: 'Các môn học chung' },
+  { id: 'MH05', name: 'Giáo dục QP-AN', credits: 2, hours: 45, major: 'Kỹ thuật làm bánh', type: 'Các môn học chung' },
+  { id: 'MH06', name: 'Giáo dục Thể chất', credits: 1, hours: 30, major: 'Kỹ thuật làm bánh', type: 'Các môn học chung' },
+  { id: 'MH07', name: 'Tổng quan du lịch và khách sạn', credits: 2, hours: 30, major: 'Kỹ thuật làm bánh', type: 'Môn học, mô đun cơ sở' },
+  { id: 'MH08', name: 'Sinh lý dinh dưỡng', credits: 3, hours: 45, major: 'Kỹ thuật làm bánh', type: 'Môn học, mô đun cơ sở' },
+  { id: 'MH09', name: 'Tâm lý và kỹ năng giao tiếp ứng xử với khách du lịch', credits: 2, hours: 30, major: 'Kỹ thuật làm bánh', type: 'Môn học, mô đun cơ sở' },
+  { id: 'MH10', name: 'Tổ chức an toàn lao động cơ sở vật chất kỹ thuật trong bộ phận bếp', credits: 3, hours: 45, major: 'Kỹ thuật làm bánh', type: 'Môn học, mô đun cơ sở' },
+  { id: 'MH11', name: 'An toàn thực phẩm, thương phẩm hàng thực phẩm', credits: 3, hours: 45, major: 'Kỹ thuật làm bánh', type: 'Môn học, mô đun cơ sở' },
+  { id: 'MH12', name: 'Nghiệp vụ bán hàng và chăm sóc khách hàng', credits: 4, hours: 60, major: 'Kỹ thuật làm bánh', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH13', name: 'Nghiệp vụ nhà hàng', credits: 1.5, hours: 45, major: 'Kỹ thuật làm bánh', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH14', name: 'Lý thuyết về kỹ thuật chế biến bánh', credits: 5, hours: 75, major: 'Kỹ thuật làm bánh', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MĐ15', name: 'Kỹ thuật chế biến bánh Á', credits: 5, hours: 120, major: 'Kỹ thuật làm bánh', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH16', name: 'Kỹ thuật trang trí trong chế biến bánh', credits: 2, hours: 60, major: 'Kỹ thuật làm bánh', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MĐ17', name: 'Kỹ thuật chế biến bánh Âu', credits: 7, hours: 180, major: 'Kỹ thuật làm bánh', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MĐ18', name: 'Kỹ thuật chế biến bánh tráng miệng', credits: 3, hours: 75, major: 'Kỹ thuật làm bánh', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH19', name: 'Thực hành nghề nghiệp 1', credits: 4, hours: 120, major: 'Kỹ thuật làm bánh', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MĐ20', name: 'Thực hành nghề nghiệp 2', credits: 4, hours: 180, major: 'Kỹ thuật làm bánh', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH21', name: 'Hạch toán định mức', credits: 3, hours: 45, major: 'Kỹ thuật làm bánh', type: 'Môn học, mô đun tự chọn' },
+  { id: 'MH22', name: 'Văn hóa ẩm thực', credits: 3, hours: 45, major: 'Kỹ thuật làm bánh', type: 'Môn học, mô đun tự chọn' },
+  { id: 'MH23', name: 'Lý thuyết chế biến bánh lạnh', credits: 3, hours: 45, major: 'Kỹ thuật làm bánh', type: 'Môn học, mô đun tự chọn' },
+  { id: 'MH24', name: 'Lý thuyết chế biến bánh dành cho người ăn kiêng', credits: 3, hours: 45, major: 'Kỹ thuật làm bánh', type: 'Môn học, mô đun tự chọn' },
+
+  // === NGÀNH: MAY THỜI TRANG (image_a00d0c.png) ===
+  { id: 'MH01', name: 'Tiếng Anh', credits: 3, hours: 90, major: 'May thời trang', type: 'Các môn học chung' },
+  { id: 'MH02', name: 'Tin học', credits: 2, hours: 45, major: 'May thời trang', type: 'Các môn học chung' },
+  { id: 'MH03', name: 'Giáo dục chính trị', credits: 2, hours: 30, major: 'May thời trang', type: 'Các môn học chung' },
+  { id: 'MH04', name: 'Pháp luật', credits: 1, hours: 15, major: 'May thời trang', type: 'Các môn học chung' },
+  { id: 'MH05', name: 'Giáo dục QP-AN', credits: 2, hours: 45, major: 'May thời trang', type: 'Các môn học chung' },
+  { id: 'MH06', name: 'Giáo dục Thể chất', credits: 1, hours: 30, major: 'May thời trang', type: 'Các môn học chung' },
+  { id: 'MH07', name: 'Vẽ kỹ thuật ngành may', credits: 2, hours: 30, major: 'May thời trang', type: 'Môn học, mô đun cơ sở' },
+  { id: 'MH08', name: 'Nhân trắc học', credits: 2, hours: 30, major: 'May thời trang', type: 'Môn học, mô đun cơ sở' },
+  { id: 'MH09', name: 'Cơ sở thiết kế trang phục', credits: 2, hours: 30, major: 'May thời trang', type: 'Môn học, mô đun cơ sở' },
+  { id: 'MH10', name: 'Vật liệu may, công nghệ là', credits: 2, hours: 30, major: 'May thời trang', type: 'Môn học, mô đun cơ sở' },
+  { id: 'MH11', name: 'An toàn lao động', credits: 1, hours: 20, major: 'May thời trang', type: 'Môn học, mô đun cơ sở' },
+  { id: 'MH12', name: 'Thiết bị ngành may', credits: 3, hours: 45, major: 'May thời trang', type: 'Môn học, mô đun cơ sở' },
+  { id: 'MH13', name: 'Thiết kế trang phục 1', credits: 3.5, hours: 110, major: 'May thời trang', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH14', name: 'May sơ mi nam, nữ', credits: 3.5, hours: 110, major: 'May thời trang', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH15', name: 'May quần âu nam, nữ', credits: 3.5, hours: 110, major: 'May thời trang', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MĐ16', name: 'Thiết kế trang phục 2', credits: 3, hours: 90, major: 'May thời trang', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH17', name: 'May áo jacket nam', credits: 3.5, hours: 110, major: 'May thời trang', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MĐ18', name: 'May các sản phẩm nâng cao', credits: 2.5, hours: 75, major: 'May thời trang', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH19', name: 'May váy, áo váy', credits: 3.5, hours: 110, major: 'May thời trang', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH20', name: 'Công nghệ sản xuất', credits: 3, hours: 45, major: 'May thời trang', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH21', name: 'Quản lý chất lượng sản phẩm', credits: 2, hours: 30, major: 'May thời trang', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MĐ22', name: 'Cắt may thời trang sơ mi, quần âu', credits: 4, hours: 90, major: 'May thời trang', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH23', name: 'Thực hành nghề nghiệp 1', credits: 4, hours: 120, major: 'May thời trang', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MĐ24', name: 'Thực hành nghề nghiệp 2', credits: 4, hours: 180, major: 'May thời trang', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH25', name: 'Kỹ năng giao tiếp', credits: 2, hours: 30, major: 'May thời trang', type: 'Môn học, mô đun tự chọn' },
+  { id: 'MH26', name: 'Khởi tạo doanh nghiệp', credits: 2, hours: 30, major: 'May thời trang', type: 'Môn học, mô đun tự chọn' },
+
+  // === NGÀNH: KỸ THUẬT MÁY LẠNH VÀ ĐIỀU HÒA KHÔNG KHÍ (image_a01168.png) ===
+  { id: 'MH01', name: 'Tiếng Anh', credits: 3, hours: 90, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Các môn học chung' },
+  { id: 'MH02', name: 'Tin học', credits: 2, hours: 45, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Các môn học chung' },
+  { id: 'MH03', name: 'Giáo dục chính trị', credits: 2, hours: 30, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Các môn học chung' },
+  { id: 'MH04', name: 'Pháp luật', credits: 1, hours: 15, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Các môn học chung' },
+  { id: 'MH05', name: 'Giáo dục QP-AN', credits: 2, hours: 45, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Các môn học chung' },
+  { id: 'MH06', name: 'Giáo dục Thể chất', credits: 1, hours: 30, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Các môn học chung' },
+  { id: 'MH07', name: 'Kỹ năng làm việc nhóm', credits: 3, hours: 45, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Môn học, mô đun cơ sở' },
+  { id: 'MH08', name: 'An toàn lao động điện lạnh và vệ sinh công nghiệp', credits: 2, hours: 30, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Môn học, mô đun cơ sở' },
+  { id: 'MH09', name: 'Kỹ thuật điện tử', credits: 2, hours: 30, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Môn học, mô đun cơ sở' },
+  { id: 'MH10', name: 'Cơ sở kỹ thuật nhiệt - lạnh và điều hòa không khí', credits: 5, hours: 75, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Môn học, mô đun cơ sở' },
+  { id: 'MH11', name: 'Vật liệu điện lạnh', credits: 4, hours: 60, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Môn học, mô đun cơ sở' },
+  { id: 'MH12', name: 'Cơ sở kỹ thuật điện', credits: 4, hours: 60, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Môn học, mô đun cơ sở' },
+  { id: 'MĐ13', name: 'Đo lường điện - lạnh', credits: 2, hours: 60, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MĐ14', name: 'Điện dân dụng và công nghiệp', credits: 2, hours: 60, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH15', name: 'Trang bị điện', credits: 2.5, hours: 75, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MĐ16', name: 'Lạnh cơ bản', credits: 4, hours: 120, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH17', name: 'Điều hòa không khí ô tô', credits: 2.5, hours: 75, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MĐ18', name: 'Hệ thống máy lạnh dân dụng và thương nghiệp', credits: 3, hours: 90, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MĐ19', name: 'Hệ thống điều hòa không khí cục bộ', credits: 3, hours: 90, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH20', name: 'Hệ thống máy lạnh công nghiệp', credits: 3, hours: 90, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MĐ21', name: 'Hệ thống điều hòa không khí trung tâm', credits: 3, hours: 90, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH22', name: 'Thực hành nghề nghiệp 1', credits: 4, hours: 120, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MĐ23', name: 'Thực hành nghề nghiệp 2', credits: 4, hours: 180, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Môn học, mô đun chuyên môn' },
+  { id: 'MH24', name: 'Kỹ năng giao tiếp', credits: 3, hours: 45, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Môn học, mô đun tự chọn' },
+  { id: 'MH25', name: 'Khởi tạo doanh nghiệp', credits: 3, hours: 45, major: 'Kỹ thuật máy lạnh và điều hoà không khí', type: 'Môn học, mô đun tự chọn' },
+
+  // === NGÀNH: TIẾNG NHẬT (image_0336e2.png) ===
   { id: 'MH01', name: 'Tiếng Anh', credits: 3, hours: 90, major: 'Tiếng Nhật', type: 'Các môn học chung' },
   { id: 'MH02', name: 'Tin học', credits: 2, hours: 45, major: 'Tiếng Nhật', type: 'Các môn học chung' },
   { id: 'MH03', name: 'Giáo dục chính trị', credits: 2, hours: 30, major: 'Tiếng Nhật', type: 'Các môn học chung' },
@@ -195,7 +276,7 @@ const INITIAL_SUBJECTS = [
   { id: 'MH24', name: 'Tiếng Nhật du lịch', credits: 3, hours: 45, major: 'Tiếng Nhật', type: 'Môn học, mô đun tự chọn' },
   { id: 'MH25', name: 'Khởi tạo doanh nghiệp', credits: 3, hours: 45, major: 'Tiếng Nhật', type: 'Môn học, mô đun tự chọn' },
 
-  // === NGÀNH: TIẾNG TRUNG QUỐC ===
+  // === NGÀNH: TIẾNG TRUNG QUỐC (image_03371f.png) ===
   { id: 'MH01', name: 'Tiếng Anh', credits: 3, hours: 90, major: 'Tiếng Trung Quốc', type: 'Các môn học chung' },
   { id: 'MH02', name: 'Tin học', credits: 2, hours: 45, major: 'Tiếng Trung Quốc', type: 'Các môn học chung' },
   { id: 'MH03', name: 'Giáo dục chính trị', credits: 2, hours: 30, major: 'Tiếng Trung Quốc', type: 'Các môn học chung' },
@@ -223,12 +304,17 @@ const INITIAL_SUBJECTS = [
 
 const INITIAL_COURSES = [
   { id: 'KH001', name: 'Công nghệ thông tin' },
-  { id: 'KH002', name: 'Tạo mẫu và chăm sóc sắc đẹp' },
-  { id: 'KH003', name: 'Kỹ thuật pha chế và phục vụ đồ uống' },
+  { id: 'KH002', name: 'Chăm sóc sắc đẹp' },
+  { id: 'KH003', name: 'Kỹ thuật pha chế đồ uống' },
   { id: 'KH004', name: 'Kỹ thuật chế biến món ăn' },
   { id: 'KH005', name: 'Hướng dẫn du lịch' },
-  { id: 'KH006', name: 'Tiếng Nhật' },
-  { id: 'KH007', name: 'Tiếng Trung Quốc' }
+  { id: 'KH006', name: 'Kỹ thuật làm bánh' },
+  { id: 'KH007', name: 'May thời trang' },
+  { id: 'KH008', name: 'Kỹ thuật máy lạnh và điều hoà không khí' },
+  { id: 'KH009', name: 'Tạo mẫu và chăm sóc sắc đẹp' },
+  { id: 'KH010', name: 'Kỹ thuật pha chế và phục vụ đồ uống' },
+  { id: 'KH011', name: 'Tiếng Nhật' },
+  { id: 'KH012', name: 'Tiếng Trung Quốc' }
 ];
 
 // === DANH SÁCH LỚP HỌC HÀNH CHÍNH ===
