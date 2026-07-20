@@ -358,6 +358,21 @@ const INITIAL_COURSES = [
   { id: 'KH012', name: 'Tiếng Trung Quốc' }
 ];
 
+const INITIAL_COURSES = [
+  { id: 'KH001', name: 'Công nghệ thông tin' },
+  { id: 'KH002', name: 'Chăm sóc sắc đẹp' },
+  { id: 'KH003', name: 'Kỹ thuật pha chế đồ uống' },
+  { id: 'KH004', name: 'Kỹ thuật chế biến món ăn' },
+  { id: 'KH005', name: 'Hướng dẫn du lịch' },
+  { id: 'KH006', name: 'Kỹ thuật làm bánh' },
+  { id: 'KH007', name: 'May thời trang' },
+  { id: 'KH008', name: 'Kỹ thuật máy lạnh và điều hoà không khí' },
+  { id: 'KH009', name: 'Tạo mẫu và chăm sóc sắc đẹp' },
+  { id: 'KH010', name: 'Kỹ thuật pha chế và phục vụ đồ uống' },
+  { id: 'KH011', name: 'Tiếng Nhật' },
+  { id: 'KH012', name: 'Tiếng Trung Quốc' }
+];
+
 const INITIAL_CLASSES = [
   { id: 'LH001', name: 'Kỹ thuật chế biến món ăn K15', courseId: 'KH004', major: 'Kỹ thuật chế biến món ăn', teacherId: 'GV004', startDate: '2026-02-15', endDate: '2026-06-30', location: 'Cơ sở chính - HIC', quota: 40, term: 'Học kỳ I' },
   { id: 'LH002', name: 'Lập trình ứng dụng CNTT-K15', courseId: 'KH001', major: 'Công nghệ thông tin', teacherId: 'GV001', startDate: '2026-02-20', endDate: '2026-06-25', location: 'Tòa nhà Công nghệ cao - HIC', quota: 45, term: 'Học kỳ I' },
@@ -365,10 +380,8 @@ const INITIAL_CLASSES = [
 ];
 
 const INITIAL_ENROLLMENTS = [
-  { studentId: 'HV001', classId: 'LH002' },
-  { studentId: 'HV002', classId: 'LH001' },
-  { studentId: 'HV003', classId: 'LH003' },
-  { studentId: 'HV004', classId: 'LH002' }
+  { studentId: 'HV001', classId: 'LH002' }, { studentId: 'HV002', classId: 'LH001' },
+  { studentId: 'HV003', classId: 'LH003' }, { studentId: 'HV004', classId: 'LH002' }
 ];
 
 const INITIAL_GRADES = [
@@ -393,14 +406,12 @@ const INITIAL_STUDENTS = [
   { id: 'HV001', name: 'Nguyễn Văn Anh', dob: '15/05/2002', gender: 'Nam', cccd: '012345678912', phone: '0912345678', email: 'vananh.nguyen@gmail.com', status: 'Đang học', class: 'CNTT-K15', major: 'Công nghệ thông tin' },
   { id: 'HV002', name: 'Trần Thị Bình', dob: '20/09/2001', gender: 'Nữ', cccd: '012345678913', phone: '0987654321', email: 'thibinh.tran@gmail.com', status: 'Đang học', class: 'CBMA-K15', major: 'Kỹ thuật chế biến món ăn' },
   { id: 'HV003', name: 'Phạm Hồng Cường', dob: '02/11/2003', gender: 'Nam', cccd: '012345678914', phone: '0905123456', email: 'hongcuong.pham@gmail.com', status: 'Bảo lưu', class: 'TN-K15', major: 'Tiếng Nhật' },
-  { id: 'HV004', name: 'Lê Thùy Dương', dob: '30/01/2002', gender: 'Nữ', cccd: '012345678915', phone: '0934567890', email: 'thuyduong.le@gmail.com', status: 'Đang học', class: 'CNTT-K15', major: 'Công nghệ thông tin' },
-  { id: 'HV005', name: 'Hoàng Minh Đức', dob: '12/07/2000', gender: 'Nam', cccd: '012345678916', phone: '', email: '', status: 'Buộc thôi học', class: 'TN-K14', major: 'Tiếng Nhật' }
+  { id: 'HV004', name: 'Lê Thùy Dương', dob: '30/01/2002', gender: 'Nữ', cccd: '012345678915', phone: '0934567890', email: 'thuyduong.le@gmail.com', status: 'Đang học', class: 'CNTT-K15', major: 'Công nghệ thông tin' }
 ];
 
 const INITIAL_TEACHERS = [
   { id: 'GV001', name: 'PGS. TS. Nguyễn Tiến Dũng', specialty: 'Trí tuệ nhân tạo & Học máy', department: 'Khoa Kỹ thuật - Công nghệ', phone: '0911223344', email: 'dung.nt@tms-edu.vn', degree: 'Phó Giáo sư, Tiến sĩ' },
-  { id: 'GV002', name: 'TS. Lê Thị Hoài', specialty: 'Ngôn ngữ học ứng dụng & Ngữ pháp tiếng Nhật', department: 'Khoa Ngôn ngữ', phone: '0922334455', email: 'hoai.lt@tms-edu.vn', degree: 'Tiến sĩ' },
-  { id: 'GV003', name: 'ThS. Trần Minh Hoàng', specialty: 'Lập trình Web & Di động', department: 'Khoa Kỹ thuật - Công nghệ', phone: '0933445566', email: 'hoang.tm@tms-edu.vn', degree: 'Thạc sĩ' },
+  { id: 'GV002', name: 'TS. Lê Thị Hoài', specialty: 'Ngôn ngữ học ứng dụng', department: 'Khoa Ngôn ngữ', phone: '0922334455', email: 'hoai.lt@tms-edu.vn', degree: 'Tiến sĩ' },
   { id: 'GV004', name: 'TS. Vũ Hoàng Long', specialty: 'Chế biến món Á - Âu chuyên sâu', department: 'Khoa Dịch vụ  - Du lịch - Nhà hàng khách sạn', phone: '0944556677', email: 'long.vh@tms-edu.vn', degree: 'Tiến sĩ' }
 ];
 
@@ -408,10 +419,7 @@ const USERS_ACCOUNTS = [
   { username: 'admin', password: '123', name: 'Superadmin-HIC (Admin)', role: 'admin', email: 'admin@tms-edu.vn' },
   { username: 'cbdt', password: '123', name: 'Nguyễn Yến Đường (Cán bộ)', role: 'staff', email: 'minh.nt@tms-edu.vn' },
   { username: 'GV001', password: '123', name: 'PGS. TS. Nguyễn Tiến Dũng', role: 'teacher', email: 'dung.nt@tms-edu.vn', teacherId: 'GV001' },
-  { username: 'HV001', password: '123', name: 'Nguyễn Văn Anh', role: 'student', email: 'vananh.nguyen@gmail.com', studentId: 'HV001' },
-  { username: 'HV002', password: '123', name: 'Trần Thị Bình', role: 'student', email: 'thibinh.tran@gmail.com', studentId: 'HV002' },
-  { username: 'HV003', password: '123', name: 'Phạm Hồng Cường', role: 'student', email: 'hongcuong.pham@gmail.com', studentId: 'HV003' },
-  { username: 'HV004', password: '123', name: 'Lê Thùy Dương', role: 'student', email: 'thuyduong.le@gmail.com', studentId: 'HV004' }
+  { username: 'HV001', password: '123', name: 'Nguyễn Văn Anh', role: 'student', email: 'vananh.nguyen@gmail.com', studentId: 'HV001' }
 ];
 
 export default function App() {
@@ -485,16 +493,13 @@ export default function App() {
 
   const [isEnrollStudentModalOpen, setIsEnrollStudentModalOpen] = useState(false);
   const [selectedStudentToEnroll, setSelectedStudentToEnroll] = useState('');
-
   const [confirmModal, setConfirmModal] = useState({ isOpen: false, title: '', message: '', onConfirm: null });
 
   const [isAddScheduleModalOpen, setIsAddScheduleModalOpen] = useState(false);
   const [newScheduleForm, setNewScheduleForm] = useState({ date: '', topic: '' });
   const [activeScheduleIdForAttendance, setActiveScheduleIdForAttendance] = useState(null);
-
   const [isLegendOpen, setIsLegendOpen] = useState(true);
 
-  // Firebase Auth Setup
   useEffect(() => {
     const initAuth = async () => {
       try {
@@ -503,19 +508,15 @@ export default function App() {
         } else {
           await signInAnonymously(auth);
         }
-      } catch (err) {
-        console.error("Firebase Auth Error:", err);
-      }
+      } catch (err) { console.error("Firebase Auth Error:", err); }
     };
     initAuth();
     const unsubscribe = onAuthStateChanged(auth, setFirebaseUser);
     return () => unsubscribe();
   }, []);
 
-  // Firebase Realtime Data Listeners
   useEffect(() => {
     if (!firebaseUser) return;
-
     let isInitialLoad = true;
 
     // Seeding function (chạy 1 lần nếu DB trống)
@@ -536,10 +537,7 @@ export default function App() {
         });
 
         await Promise.all(promises);
-        console.log("Database seeded successfully!");
-      } catch (error) {
-        console.error("Error seeding database:", error);
-      }
+      } catch (error) { console.error("Error seeding:", error); }
     };
 
     const unsubAccounts = onSnapshot(getColRef('accounts'), async (snapshot) => {
@@ -550,7 +548,7 @@ export default function App() {
         setAccounts(snapshot.docs.map(doc => doc.data()));
         setIsDataLoaded(true);
       }
-    }, err => console.error("Snapshot error:", err));
+    });
 
     const unsubStudents = onSnapshot(getColRef('students'), (snapshot) => setStudents(snapshot.docs.map(d => d.data())));
     const unsubTeachers = onSnapshot(getColRef('teachers'), (snapshot) => setTeachers(snapshot.docs.map(d => d.data())));
@@ -601,13 +599,8 @@ export default function App() {
 
   const triggerConfirm = (title, message, callback) => {
     setConfirmModal({
-      isOpen: true,
-      title,
-      message,
-      onConfirm: () => {
-        callback();
-        setConfirmModal({ isOpen: false, title: '', message: '', onConfirm: null });
-      }
+      isOpen: true, title, message,
+      onConfirm: () => { callback(); setConfirmModal({ isOpen: false, title: '', message: '', onConfirm: null }); }
     });
   };
 
@@ -636,9 +629,7 @@ export default function App() {
   };
 
   const getTermGPAOfStudent = (studentId, studentMajor, gradeList, subjectList) => {
-    let totalCredits = 0;
-    let weightedScale4Sum = 0;
-
+    let totalCredits = 0; let weightedScale4Sum = 0;
     const majorSubjects = subjectList.filter(s => s.major === studentMajor);
     
     majorSubjects.forEach(sub => {
@@ -649,7 +640,6 @@ export default function App() {
       if (grade && grade.score !== undefined && grade.score !== null && grade.score !== '') {
         const final10 = parseFloat(grade.score);
         const { scale4 } = convertScoreToGrade(final10);
-        
         if (!isExcluded) {
           totalCredits += sub.credits;
           weightedScale4Sum += scale4 * sub.credits;
@@ -670,7 +660,6 @@ export default function App() {
   };
 
   const hasAccess = (allowedRoles) => allowedRoles.includes(currentUser.role);
-
   const getRoleLabel = (role) => {
     switch (role) {
       case 'admin': return { text: 'Quản trị viên', color: 'bg-rose-100 text-rose-800 border-rose-200' };
@@ -683,14 +672,9 @@ export default function App() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    const user = accounts.find(
-      (u) => u.username === loginForm.username && u.password === loginForm.password
-    );
+    const user = accounts.find((u) => u.username === loginForm.username && u.password === loginForm.password);
     if (user) {
-      setCurrentUser(user);
-      setIsLoggedIn(true);
-      setLoginError('');
-      setActiveTab('dashboard');
+      setCurrentUser(user); setIsLoggedIn(true); setLoginError(''); setActiveTab('dashboard');
       showToast(`Chào mừng ${user.name} đến với HIC LMS!`, 'success');
     } else {
       setLoginError('Tên đăng nhập hoặc mật khẩu không chính xác.');
@@ -698,26 +682,15 @@ export default function App() {
   };
 
   const handleLogout = () => {
-    setIsLoggedIn(false);
-    setCurrentUser(null);
-    setLoginForm({ username: '', password: '' });
+    setIsLoggedIn(false); setCurrentUser(null); setLoginForm({ username: '', password: '' });
     showToast('Đăng xuất thành công!', 'info');
   };
 
   const handleChangePassword = async (e) => {
     e.preventDefault();
-    if (changePassForm.oldPassword !== currentUser.password) {
-      setChangePassError('Mật khẩu hiện tại không khớp.');
-      return;
-    }
-    if (changePassForm.newPassword.length < 3) {
-      setChangePassError('Mật khẩu mới phải từ 3 ký tự.');
-      return;
-    }
-    if (changePassForm.newPassword !== changePassForm.confirmPassword) {
-      setChangePassError('Nhập lại mật khẩu mới không chính xác.');
-      return;
-    }
+    if (changePassForm.oldPassword !== currentUser.password) return setChangePassError('Mật khẩu hiện tại không khớp.');
+    if (changePassForm.newPassword.length < 3) return setChangePassError('Mật khẩu mới phải từ 3 ký tự.');
+    if (changePassForm.newPassword !== changePassForm.confirmPassword) return setChangePassError('Nhập lại mật khẩu mới không chính xác.');
 
     try {
       const updatedUser = { ...currentUser, password: changePassForm.newPassword };
@@ -727,24 +700,7 @@ export default function App() {
       setChangePassForm({ oldPassword: '', newPassword: '', confirmPassword: '' });
       setChangePassError('');
       showToast('Đổi mật khẩu bảo mật thành công!', 'success');
-    } catch (err) {
-      setChangePassError('Có lỗi xảy ra khi cập nhật mật khẩu.');
-    }
-  };
-
-  const handleOpenStudentModal = (mode, student = null) => {
-    setStudentFormMode(mode);
-    if (mode === 'edit' && student) {
-      const acc = accounts.find(a => a.username === student.id);
-      setCurrentStudentData({ ...student, dob: parseDMYtoYMD(student.dob), password: acc ? acc.password : '123' });
-    } else {
-      const lastIdNum = students.length > 0 
-        ? Math.max(...students.map(s => { const num = parseInt(s.id.replace('HV', ''), 10); return isNaN(num) ? 0 : num; })) : 0;
-      setCurrentStudentData({
-        id: `HV${String(lastIdNum + 1).padStart(3, '0')}`, name: '', dob: '', gender: 'Nam', cccd: '', phone: '', email: '', status: 'Đang học', class: 'CNTT-K15', major: 'Công nghệ thông tin', password: '123'
-      });
-    }
-    setIsStudentModalOpen(true);
+    } catch (err) { setChangePassError('Có lỗi xảy ra khi cập nhật mật khẩu.'); }
   };
 
   const handleSaveStudent = async (e) => {
@@ -775,9 +731,7 @@ export default function App() {
       await setDoc(getDocRef('accounts', studentAccount.username), studentAccount);
       showToast(studentFormMode === 'add' ? `Thành công thêm học viên ${formattedStudent.name}.` : `Cập nhật thông tin học viên ${formattedStudent.name} thành công.`, 'success');
       setIsStudentModalOpen(false);
-    } catch (err) {
-      showToast('Có lỗi xảy ra khi lưu học viên!', 'error');
-    }
+    } catch (err) { showToast('Có lỗi xảy ra khi lưu học viên!', 'error'); }
   };
 
   const handleDeleteStudent = (id, name) => {
@@ -788,19 +742,23 @@ export default function App() {
       try {
         await deleteDoc(getDocRef('students', id));
         await deleteDoc(getDocRef('accounts', id));
-        // Xóa enrollments
-        enrollments.filter(e => e.studentId === id).forEach(async (e) => {
-           await deleteDoc(getDocRef('enrollments', `${e.studentId}_${e.classId}`));
-        });
-        // Xóa grades
-        grades.filter(g => g.studentId === id).forEach(async (g) => {
-           await deleteDoc(getDocRef('grades', `${g.studentId}_${g.subjectId}`));
-        });
+        enrollments.filter(e => e.studentId === id).forEach(async (e) => await deleteDoc(getDocRef('enrollments', `${e.studentId}_${e.classId}`)));
+        grades.filter(g => g.studentId === id).forEach(async (g) => await deleteDoc(getDocRef('grades', `${g.studentId}_${g.subjectId}`)));
         showToast(`Đã xóa hồ sơ của học viên ${name}.`, 'warning');
-      } catch (err) {
-        showToast('Lỗi khi xóa học viên', 'error');
-      }
+      } catch (err) { showToast('Lỗi khi xóa học viên', 'error'); }
     });
+  };
+
+  const handleOpenStudentModal = (mode, student = null) => {
+    setStudentFormMode(mode);
+    if (mode === 'edit' && student) {
+      const acc = accounts.find(a => a.username === student.id);
+      setCurrentStudentData({ ...student, dob: parseDMYtoYMD(student.dob), password: acc ? acc.password : '123' });
+    } else {
+      const lastIdNum = students.length > 0 ? Math.max(...students.map(s => { const num = parseInt(s.id.replace('HV', ''), 10); return isNaN(num) ? 0 : num; })) : 0;
+      setCurrentStudentData({ id: `HV${String(lastIdNum + 1).padStart(3, '0')}`, name: '', dob: '', gender: 'Nam', cccd: '', phone: '', email: '', status: 'Đang học', class: 'CNTT-K15', major: 'Công nghệ thông tin', password: '123' });
+    }
+    setIsStudentModalOpen(true);
   };
 
   const handleOpenTeacherModal = (mode, teacher = null) => {
@@ -809,11 +767,8 @@ export default function App() {
       const acc = accounts.find(a => a.username === teacher.id);
       setCurrentTeacherData({ ...teacher, password: acc ? acc.password : '123' });
     } else {
-      const lastIdNum = teachers.length > 0 
-        ? Math.max(...teachers.map(t => { const num = parseInt(t.id.replace('GV', ''), 10); return isNaN(num) ? 0 : num; })) : 0;
-      setCurrentTeacherData({
-        id: `GV${String(lastIdNum + 1).padStart(3, '0')}`, name: '', specialty: '', department: 'Khoa Kỹ thuật - Công nghệ', phone: '', email: '', degree: 'Thạc sĩ', password: '123'
-      });
+      const lastIdNum = teachers.length > 0 ? Math.max(...teachers.map(t => { const num = parseInt(t.id.replace('GV', ''), 10); return isNaN(num) ? 0 : num; })) : 0;
+      setCurrentTeacherData({ id: `GV${String(lastIdNum + 1).padStart(3, '0')}`, name: '', specialty: '', department: 'Khoa Kỹ thuật - Công nghệ', phone: '', email: '', degree: 'Thạc sĩ', password: '123' });
     }
     setIsTeacherModalOpen(true);
   };
@@ -821,53 +776,34 @@ export default function App() {
   const handleSaveTeacher = async (e) => {
     e.preventDefault();
     if (!currentTeacherData.name.trim()) return;
-
     const associatedAccount = accounts.find(acc => acc.teacherId === currentTeacherData.id || acc.username === currentTeacherData.id);
-    if (associatedAccount && associatedAccount.role === 'admin' && currentUser.role !== 'admin') {
-      return showToast('Không thể sửa Quản trị viên (Admin)!', 'error');
-    }
+    if (associatedAccount && associatedAccount.role === 'admin' && currentUser.role !== 'admin') return showToast('Không thể sửa Quản trị viên (Admin)!', 'error');
 
-    const teacherAccount = {
-      username: currentTeacherData.id, password: currentTeacherData.password || '123', name: currentTeacherData.name,
-      role: 'teacher', email: currentTeacherData.email, teacherId: currentTeacherData.id
-    };
-
+    const teacherAccount = { username: currentTeacherData.id, password: currentTeacherData.password || '123', name: currentTeacherData.name, role: 'teacher', email: currentTeacherData.email, teacherId: currentTeacherData.id };
     try {
       if (teacherFormMode === 'add' && teachers.some(t => t.id === currentTeacherData.id)) return showToast('Mã giáo viên đã trùng lập!', 'error');
-      
-      const teacherToSave = { ...currentTeacherData };
-      delete teacherToSave.password; // Không lưu pass vào bảng giáo viên
-
+      const teacherToSave = { ...currentTeacherData }; delete teacherToSave.password;
       await setDoc(getDocRef('teachers', teacherToSave.id), teacherToSave);
       await setDoc(getDocRef('accounts', teacherAccount.username), teacherAccount);
       showToast(`Lưu hồ sơ giáo viên ${teacherToSave.name} thành công.`, 'success');
       setIsTeacherModalOpen(false);
-    } catch (err) {
-      showToast('Có lỗi xảy ra khi lưu.', 'error');
-    }
+    } catch (err) { showToast('Có lỗi xảy ra khi lưu.', 'error'); }
   };
 
   const handleDeleteTeacher = (id, name) => {
     const associatedAccount = accounts.find(acc => acc.teacherId === id || acc.username === id);
     if (associatedAccount && associatedAccount.role === 'admin') return showToast('Không thể xóa Quản trị viên!', 'error');
-
     triggerConfirm('Xóa Giáo viên', `Loại bỏ giáo viên ${name} (${id})?`, async () => {
-      await deleteDoc(getDocRef('teachers', id));
-      await deleteDoc(getDocRef('accounts', id));
+      await deleteDoc(getDocRef('teachers', id)); await deleteDoc(getDocRef('accounts', id));
       showToast(`Đã xóa giáo viên ${name}.`, 'warning');
     });
   };
 
   const handleOpenClassModal = (mode, cls = null) => {
     setClassFormMode(mode);
-    if (mode === 'edit' && cls) {
-      setCurrentClassData({ ...cls });
-    } else {
-      const lastIdNum = classes.length > 0 
-        ? Math.max(...classes.map(c => { const num = parseInt(c.id.replace('LH', ''), 10); return isNaN(num) ? 0 : num; })) : 0;
-      setCurrentClassData({
-        id: `LH${String(lastIdNum + 1).padStart(3, '0')}`, name: '', courseId: 'KH001', major: 'Công nghệ thông tin', teacherId: teachers[0]?.id || '', startDate: '', endDate: '', location: '', quota: 40, term: 'Học kỳ I'
-      });
+    if (mode === 'edit' && cls) { setCurrentClassData({ ...cls }); } else {
+      const lastIdNum = classes.length > 0 ? Math.max(...classes.map(c => { const num = parseInt(c.id.replace('LH', ''), 10); return isNaN(num) ? 0 : num; })) : 0;
+      setCurrentClassData({ id: `LH${String(lastIdNum + 1).padStart(3, '0')}`, name: '', courseId: 'KH001', major: 'Công nghệ thông tin', teacherId: teachers[0]?.id || '', startDate: '', endDate: '', location: '', quota: 40, term: 'Học kỳ I' });
     }
     setIsClassModalOpen(true);
   };
@@ -876,7 +812,6 @@ export default function App() {
     e.preventDefault();
     if (!currentClassData.name.trim() || !currentClassData.location.trim()) return showToast('Vui lòng điền đủ thông tin!', 'error');
     if (classFormMode === 'add' && classes.some(c => c.id === currentClassData.id)) return showToast('Mã lớp đã tồn tại!', 'error');
-
     await setDoc(getDocRef('classes', currentClassData.id), currentClassData);
     showToast(`Lưu thông tin lớp ${currentClassData.name} thành công.`, 'success');
     setIsClassModalOpen(false);
@@ -887,8 +822,7 @@ export default function App() {
       await deleteDoc(getDocRef('classes', id));
       enrollments.filter(e => e.classId === id).forEach(async (e) => await deleteDoc(getDocRef('enrollments', `${e.studentId}_${e.classId}`)));
       schedules.filter(s => s.classId === id).forEach(async (s) => {
-         await deleteDoc(getDocRef('schedules', s.id));
-         await deleteDoc(getDocRef('attendance', s.id));
+         await deleteDoc(getDocRef('schedules', s.id)); await deleteDoc(getDocRef('attendance', s.id));
       });
       showToast(`Đã xóa lớp học ${name}.`, 'warning');
     });
@@ -896,9 +830,7 @@ export default function App() {
 
   const handleOpenSubjectModal = (mode, subject = null) => {
     setSubjectFormMode(mode);
-    if (mode === 'edit' && subject) {
-      setCurrentSubjectData({ ...subject });
-    } else {
+    if (mode === 'edit' && subject) { setCurrentSubjectData({ ...subject }); } else {
       setCurrentSubjectData({ id: '', name: '', credits: 3, hours: 45, major: studentFilterMajor, type: 'Môn học, mô đun chuyên môn' });
     }
     setIsSubjectModalOpen(true);
@@ -907,12 +839,8 @@ export default function App() {
   const handleSaveSubject = async (e) => {
     e.preventDefault();
     if (!currentSubjectData.id.trim() || !currentSubjectData.name.trim()) return showToast('Điền mã và tên môn học!', 'error');
-    
     const subjectDocId = `${currentSubjectData.id}_${currentSubjectData.major}`;
-    if (subjectFormMode === 'add' && subjects.some(s => s.id === currentSubjectData.id && s.major === currentSubjectData.major)) {
-      return showToast('Mã môn học đã tồn tại trong ngành này!', 'error');
-    }
-
+    if (subjectFormMode === 'add' && subjects.some(s => s.id === currentSubjectData.id && s.major === currentSubjectData.major)) return showToast('Mã môn học đã tồn tại trong ngành này!', 'error');
     await setDoc(getDocRef('subjects', subjectDocId), currentSubjectData);
     showToast(`Lưu môn học "${currentSubjectData.name}" thành công!`, 'success');
     setIsSubjectModalOpen(false);
@@ -925,30 +853,11 @@ export default function App() {
     });
   };
 
-  const handleEnrollStudent = async (e) => {
-    e.preventDefault();
-    if (!selectedStudentToEnroll) return showToast('Hãy chọn học viên.', 'error');
-    if (enrollments.some(e => e.studentId === selectedStudentToEnroll && e.classId === selectedClassIdForAttendance)) {
-      return showToast('Học viên này đã tồn tại trong lớp.', 'warning');
-    }
-
-    await setDoc(getDocRef('enrollments', `${selectedStudentToEnroll}_${selectedClassIdForAttendance}`), {
-      studentId: selectedStudentToEnroll, classId: selectedClassIdForAttendance
-    });
-    showToast('Xếp học viên vào lớp thành công!', 'success');
-    setIsEnrollStudentModalOpen(false);
-    setSelectedStudentToEnroll('');
-  };
-
   const handleUpdateGradeDirectly = async (studentId, subjectId, val) => {
     const docId = `${studentId}_${subjectId}`;
-    if (val === '') {
-      await deleteDoc(getDocRef('grades', docId));
-      return;
-    }
+    if (val === '') { await deleteDoc(getDocRef('grades', docId)); return; }
     let numVal = parseFloat(val);
     if (isNaN(numVal) || numVal < 0 || numVal > 10) return showToast('Điểm số phải từ 0-10!', 'error');
-    
     await setDoc(getDocRef('grades', docId), { studentId, subjectId, score: Math.round(numVal * 10) / 10 });
   };
 
@@ -985,15 +894,12 @@ export default function App() {
   const handleAddSchedule = async (e) => {
     e.preventDefault();
     if (!newScheduleForm.date || !newScheduleForm.topic.trim()) return showToast('Nhập đủ thông tin!', 'error');
-
     const currentSessions = schedules.filter(s => s.classId === selectedClassIdForAttendance);
     const sessionNum = currentSessions.length + 1;
-    const newSchedId = `S${Date.now()}`; // Unique ID
-
+    const newSchedId = `S${Date.now()}`;
     await setDoc(getDocRef('schedules', newSchedId), {
       id: newSchedId, classId: selectedClassIdForAttendance, sessionNum, date: parseYMDtoDMY(newScheduleForm.date), topic: newScheduleForm.topic
     });
-
     showToast(`Đã thêm lịch học Buổi ${sessionNum}!`, 'success');
     setIsAddScheduleModalOpen(false);
     setNewScheduleForm({ date: '', topic: '' });
@@ -1003,6 +909,16 @@ export default function App() {
     const docRef = getDocRef('attendance', scheduleId);
     await setDoc(docRef, { [studentId]: status }, { merge: true });
     showToast('Điểm danh tự động lưu thành công.', 'success');
+  };
+
+  const handleEnrollStudent = async (e) => {
+    e.preventDefault();
+    if (!selectedStudentToEnroll) return showToast('Hãy chọn học viên.', 'error');
+    if (enrollments.some(e => e.studentId === selectedStudentToEnroll && e.classId === selectedClassIdForAttendance)) return showToast('Học viên này đã tồn tại trong lớp.', 'warning');
+    await setDoc(getDocRef('enrollments', `${selectedStudentToEnroll}_${selectedClassIdForAttendance}`), { studentId: selectedStudentToEnroll, classId: selectedClassIdForAttendance });
+    showToast('Xếp học viên vào lớp thành công!', 'success');
+    setIsEnrollStudentModalOpen(false);
+    setSelectedStudentToEnroll('');
   };
 
   const exportClassToCSV = (classId) => {
@@ -1023,7 +939,6 @@ export default function App() {
   const handleExcelImport = (e, type) => {
     const file = e.target.files[0];
     if (!file || !window.XLSX) return showToast('Lỗi tải module Excel.', 'error');
-
     const reader = new FileReader();
     reader.onload = async (evt) => {
       try {
@@ -1033,8 +948,7 @@ export default function App() {
         if (rawData.length < 2) return showToast('File rỗng.', 'error');
 
         const dataRows = rawData.slice(1);
-        let successCount = 0;
-        const promises = [];
+        let successCount = 0; const promises = [];
 
         if (type === 'students') {
           dataRows.forEach(row => {
@@ -1071,13 +985,9 @@ export default function App() {
               quota: row[4] ? parseInt(row[4]) || 40 : 40, location: row[5] ? String(row[5]).trim() : 'HIC Campus', term: row[6] ? String(row[6]).trim() : 'Học kỳ I',
               startDate: row[7] ? String(row[7]).trim() : '2026-09-01', endDate: row[8] ? String(row[8]).trim() : '2027-01-15', courseId: 'KH001'
             };
-            if (!classes.some(c => c.id === cl.id)) {
-              promises.push(setDoc(getDocRef('classes', cl.id), cl));
-              successCount++;
-            }
+            if (!classes.some(c => c.id === cl.id)) { promises.push(setDoc(getDocRef('classes', cl.id), cl)); successCount++; }
           });
         }
-
         await Promise.all(promises);
         showToast(`Nhập dữ liệu thành công ${successCount} bản ghi.`, 'success');
       } catch (err) { showToast('Có lỗi đọc file.', 'error'); }
@@ -1088,7 +998,6 @@ export default function App() {
   const handleGradeExcelImport = (e) => {
     const file = e.target.files[0];
     if (!file || !window.XLSX) return;
-
     const reader = new FileReader();
     reader.onload = async (evt) => {
       try {
@@ -1181,9 +1090,7 @@ export default function App() {
     window.XLSX.writeFile(wb, filename);
   };
 
-
   const subjectsOfSelectedMajorForGrades = useMemo(() => subjects.filter(s => s.major === selectedMajorForGrades), [subjects, selectedMajorForGrades]);
-  
   const studentsOfSelectedMajorForGrades = useMemo(() => {
     return students.filter(st => {
       if (currentUser?.role === 'student') return st.id === currentUser.studentId;
@@ -1212,7 +1119,7 @@ export default function App() {
     return (
       <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center font-sans">
         <div className="w-12 h-12 border-4 border-indigo-200 border-t-indigo-600 rounded-full animate-spin mb-4"></div>
-        <p className="text-slate-500 font-semibold text-sm">Đang kết nối hệ thống đám mây HIC...</p>
+        <p className="text-slate-500 font-semibold text-sm">Đang kết nối hệ thống đám mây HIC Firebase...</p>
       </div>
     );
   }
@@ -1711,7 +1618,7 @@ export default function App() {
         </div>
       )}
 
-      {}
+      {/* MODALS */}
       {isChangePassModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
           <div className="w-full max-w-md bg-white rounded-2xl shadow-xl overflow-hidden border">
