@@ -425,8 +425,8 @@ const INITIAL_TEACHERS = [
 
 // === DANH SÁCH TÀI KHOẢN MẪU BAN ĐẦU ===
 const USERS_ACCOUNTS = [
-  { username: 'admin', password: '123', name: 'Trần Thế Anh (Admin)', role: 'admin', email: 'admin@tms-edu.vn' },
-  { username: 'cbdt', password: '123', name: 'Nguyễn Thị Minh (Cán bộ)', role: 'staff', email: 'minh.nt@tms-edu.vn' },
+  { username: 'admin', password: '123', name: 'Superadmin-HIC (Admin)', role: 'admin', email: 'admin@tms-edu.vn' },
+  { username: 'cbdt', password: '123', name: 'Nguyễn Yến Đường (Cán bộ)', role: 'staff', email: 'minh.nt@tms-edu.vn' },
   { username: 'GV001', password: '123', name: 'PGS. TS. Nguyễn Tiến Dũng', role: 'teacher', email: 'dung.nt@tms-edu.vn', teacherId: 'GV001' },
   { username: 'HV001', password: '123', name: 'Nguyễn Văn Anh', role: 'student', email: 'vananh.nguyen@gmail.com', studentId: 'HV001' },
   { username: 'HV002', password: '123', name: 'Trần Thị Bình', role: 'student', email: 'thibinh.tran@gmail.com', studentId: 'HV002' },
