@@ -1,4 +1,4 @@
-mport React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { 
   Users, GraduationCap, UserCheck, Search, Plus, Edit, Trash2, Lock, 
   LogOut, User, Shield, BookOpen, CheckCircle, AlertCircle, Menu, X, Key, 
@@ -19,6 +19,7 @@ const appId = typeof __app_id !== 'undefined' ? __app_id : 'hic-lms-app';
 // Helper tạo tham chiếu tới collection/document
 const getColRef = (colName) => collection(db, 'artifacts', appId, 'public', 'data', colName);
 const getDocRef = (colName, docId) => doc(db, 'artifacts', appId, 'public', 'data', colName, String(docId));
+
 // === DỮ LIỆU CHƯƠNG TRÌNH ĐÀO TẠO CỦA CÁC NGÀNH ===
 const INITIAL_SUBJECTS = [
   // === NGÀNH: CÔNG NGHỆ THÔNG TIN (image_304889.png) ===
@@ -341,21 +342,6 @@ const INITIAL_SUBJECTS = [
   { id: 'MH21', name: 'Khẩu ngữ tiếng Trung thương mại', credits: 3, hours: 45, major: 'Tiếng Trung Quốc', type: 'Môn học, mô đun tự chọn' },
   { id: 'MH22', name: 'Khẩu ngữ tiếng Trung du lịch', credits: 3, hours: 45, major: 'Tiếng Trung Quốc', type: 'Môn học, mô đun tự chọn' },
   { id: 'MH23', name: 'Khởi tạo doanh nghiệp', credits: 3, hours: 45, major: 'Tiếng Trung Quốc', type: 'Môn học, mô đun tự chọn' }
-];
-
-const INITIAL_COURSES = [
-  { id: 'KH001', name: 'Công nghệ thông tin' },
-  { id: 'KH002', name: 'Chăm sóc sắc đẹp' },
-  { id: 'KH003', name: 'Kỹ thuật pha chế đồ uống' },
-  { id: 'KH004', name: 'Kỹ thuật chế biến món ăn' },
-  { id: 'KH005', name: 'Hướng dẫn du lịch' },
-  { id: 'KH006', name: 'Kỹ thuật làm bánh' },
-  { id: 'KH007', name: 'May thời trang' },
-  { id: 'KH008', name: 'Kỹ thuật máy lạnh và điều hoà không khí' },
-  { id: 'KH009', name: 'Tạo mẫu và chăm sóc sắc đẹp' },
-  { id: 'KH010', name: 'Kỹ thuật pha chế và phục vụ đồ uống' },
-  { id: 'KH011', name: 'Tiếng Nhật' },
-  { id: 'KH012', name: 'Tiếng Trung Quốc' }
 ];
 
 const INITIAL_COURSES = [
